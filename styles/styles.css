@@ -1,0 +1,131 @@
+/* .attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); } */
+:root{
+  --pale_blue: hsl(225, 100%, 94%);
+  --right_blue: hsl(245, 75%, 52%);
+  --very_blue: hsl(225, 100%, 98%);
+  --desaturated_blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+*{
+  box-sizing: border-box;
+}
+body{
+  /*Position*/
+  /*Box-model*/
+  /*Text*/
+  font-family: 'Red Hat Display', sans-serif;
+  /*Visual*/
+  background-color: var(--pale_blue);
+  /*Otros*/
+}
+.background--patern{
+  position: absolute;
+  width: 100%;
+}
+.background--patern1{
+  width: 100%;
+}
+.main{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 88%;
+  max-width: 408px;
+  border-radius: 25px;
+  overflow: hidden;
+  background-color: var(--very_blue);
+  box-shadow: 2px 2px 7px hsl(200 0% 0% / .1);
+}
+.card--img{
+  width: 100%;
+  margin-bottom: 0.8em;
+}
+.card--title{
+  margin-bottom: 0.1em;
+  color: var(--Dark-blue);
+  font-size: 1.4rem;
+  font-weight: 900;
+}
+.card--paragraph{
+  width:80%;
+  margin-bottom: 1.9em;
+  color: var(--desaturated_blue);
+  text-align: center;
+  line-height:1.5em;
+}
+.price{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80%;
+  margin-bottom: 1.8em
+}
+.price--music{
+  width: 50px;
+  height: 50px;
+}
+.price--title{
+  color: var(--Dark-blue);
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 1.4em
+}
+.title--price{
+  color: var(--desaturated_blue);
+  font-weight: 500;
+}
+.price--change{
+  color: var(--right_blue);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+.pay{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2em;
+}
+.pay--next{
+  width: 85%;
+  margin-bottom: 0.7em;
+  padding: 1em 0;
+  border: 0;
+  border-radius: 0.9em;
+  background-color:var(--right_blue);
+  color: var(--very_blue);
+  font-weight:900;
+  font-size: 0.94rem;
+}
+.pay--back{
+  width: 85%;
+  margin-bottom: 0.7em;
+  padding: 1em 0;
+  border: 0;
+  border-radius: 0.9em;
+  color: var(--desaturated_blue);
+  font-weight:700;
+  font-size: 0.94rem;
+}
+@media (min-width: 992px) {
+  .price--change:hover{
+    color: var(--desaturated_blue);
+  }
+  .pay--next:hover{
+    background-color: var(--desaturated_blue);
+    box-shadow: 2px 2px 4px hsl(100 100% 1% / .2)
+  }
+  .pay--back:hover{
+    color: var(--Dark-blue);
+  }
+}
